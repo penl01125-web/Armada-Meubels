@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ARMADA levert stijlvolle en betaalbare zakelijke meubels voor kantoren, winkels, horeca en andere bedrijfsruimtes.">
+  <meta name="theme-color" content="#f3ece2">
+  <title>ARMADA | Zakelijke meubels en projectinrichting</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement"><span class="announcement-dot"></span> Zakelijke meubels · Persoonlijk advies · Eindhoven</div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="ARMADA startpagina"><img src="images/image1.png" alt="ARMADA Projectinrichting logo"></a>
+    <button class="mobile-menu-button" id="mobileMenuButton" aria-label="Menu openen" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav" aria-label="Hoofdnavigatie">
+      <a href="#assortiment">Assortiment</a>
+      <a href="#over-armada">Over ARMADA</a>
+      <a href="#werkwijze">Onze aanpak</a>
+      <a href="#klachten">Klachten</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="cart-button" type="button" data-open-cart aria-label="Winkelwagen openen">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11.1a2 2 0 0 0 2 1.6h8.6a2 2 0 0 0 1.9-1.4L22 8H6"/><circle cx="10" cy="20" r="1.2"/><circle cx="18" cy="20" r="1.2"/></svg>
+      <span class="cart-button-label">Winkelwagen</span><span class="cart-count" id="cartCount">0</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span>ARMADA</span> · ZAKELIJKE INRICHTING</p>
+        <h1>Een werkplek die<br><em>voor u werkt.</em></h1>
+        <p class="hero-intro">Van bureaus en ergonomische stoelen tot complete vergaderruimtes. ARMADA helpt bedrijven met stijlvolle meubels, aantrekkelijke prijzen en persoonlijk contact.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#assortiment">Bekijk assortiment <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="#contact">Vraag informatie aan <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="hero-proof">
+          <div class="proof-icon">✦</div>
+          <div><strong>Van één meubel tot complete inrichting</strong><span>Meedenken over wat past bij uw bedrijf.</span></div>
+        </div>
+      </div>
+      <div class="hero-visual" aria-label="Voorbeelden uit het assortiment">
+        <div class="visual-glow"></div>
+        <div class="visual-card visual-card-main"><img src="images/products-clean/product-09.jpg" alt="Ovale vergadertafel uit het assortiment"><span class="visual-caption">Samen goed aan tafel</span></div>
+        <div class="visual-card visual-card-chair"><img src="images/products-clean/product-11.jpg" alt="Ergonomische bureaustoel uit het assortiment"></div>
+        <div class="visual-card visual-card-desk"><img src="images/products-clean/product-04.jpg" alt="Elektrisch zit-sta bureau uit het assortiment"></div>
+        <div class="visual-stamp"><span>30</span><small>artikelen<br>in assortiment</small></div>
+      </div>
+    </section>
+
+    <section class="value-strip" aria-label="Waar ARMADA voor staat">
+      <div><span class="value-number">01</span><strong>Kwaliteit</strong><small>Meubels voor dagelijks gebruik</small></div>
+      <div><span class="value-number">02</span><strong>Betaalbaar</strong><small>Scherpe en duidelijke prijzen</small></div>
+      <div><span class="value-number">03</span><strong>Persoonlijk</strong><small>Contact en advies op maat</small></div>
+      <div><span class="value-number">04</span><strong>Zakelijk</strong><small>Voor werkplekken en projecten</small></div>
+    </section>
+
+    <section class="section catalog-section" id="assortiment">
+      <div class="section-heading section-heading-split">
+        <div><p class="eyebrow">HET ASSORTIMENT</p><h2>Meubels met een<br><em>duidelijk doel.</em></h2></div>
+        <p class="section-lead">Bekijk de 30 artikelen uit het ARMADA-assortiment. De prijzen staan inclusief en exclusief btw vermeld. Voeg producten toe aan uw winkelwagen om uw selectie te bekijken.</p>
+      </div>
+      <div class="catalog-toolbar">
+        <label class="search-box"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5"/></svg><input type="search" id="productSearch" placeholder="Zoek een meubel..." aria-label="Zoek in assortiment"></label>
+        <div class="category-filters" id="categoryFilters" aria-label="Filter op categorie">
+          <button class="filter-chip active" type="button" data-category="Alles">Alles <span>30</span></button>
+          <button class="filter-chip" type="button" data-category="Bureaus">Bureaus</button>
+          <button class="filter-chip" type="button" data-category="Stoelen">Stoelen</button>
+          <button class="filter-chip" type="button" data-category="Tafels">Tafels</button>
+          <button class="filter-chip" type="button" data-category="Kasten & opbergen">Kasten</button>
+          <button class="filter-chip" type="button" data-category="Ontvangst">Ontvangst</button>
+          <button class="filter-chip" type="button" data-category="Lounge">Lounge</button>
+          <button class="filter-chip" type="button" data-category="Overig">Overig</button>
+        </div>
+      </div>
+      <div class="catalog-meta"><span id="resultsCount">30 artikelen</span><span>Prijzen incl. btw · exclusief eventuele levering en montage</span></div>
+      <div class="product-grid" id="productGrid" aria-live="polite"></div>
+      <div class="no-results" id="noResults" hidden><span>⌕</span><h3>Geen meubels gevonden</h3><p>Probeer een andere zoekterm of categorie.</p><button class="button button-light" id="resetFilters" type="button">Wis filters</button></div>
+      <div class="catalog-note"><span>↗</span><p>Een grotere bestelling of een complete kantoorinrichting nodig? <a href="#contact">Neem contact op voor informatie over de mogelijkheden.</a></p></div>
+    </section>
+
+    <section class="about-section" id="over-armada">
+      <div class="about-visual">
+        <div class="about-image-large"><img src="images/products-clean/product-20.jpg" alt="Grijze tweezits loungebank voor een wachtruimte"></div>
+        <div class="about-note"><span class="note-symbol">A.</span><p>Een inrichting die past bij de mensen en het werk.</p></div>
+        <div class="about-side-image"><img src="images/products-clean/product-02.jpg" alt="Bureau met eiken blad"></div>
+      </div>
+      <div class="about-copy">
+        <p class="eyebrow">WIE WIJ ZIJN</p>
+        <h2>Praktisch design.<br><em>Persoonlijke service.</em></h2>
+        <p>ARMADA is een meubelbedrijf gericht op zakelijke inrichting. We leveren meubels voor onder andere kantoren, winkels, horecagelegenheden en andere bedrijfsruimtes.</p>
+        <p>Ons doel is om kwalitatieve en stijlvolle meubels bereikbaar te maken met aantrekkelijke prijzen en professioneel contact. We denken mee over losse meubels, grotere aantallen en complete inrichtingspakketten.</p>
+        <div class="mission-grid"><div><span class="mini-label">ONZE MISSIE</span><p>Goede meubels en service bieden, zodat klanten met vertrouwen hun ruimte kunnen inrichten.</p></div><div><span class="mini-label">ONZE VISIE</span><p>Groeien door kwaliteit, duidelijke afspraken en tevreden klanten centraal te stellen.</p></div></div>
+        <a href="#werkwijze" class="text-link">Zo werken we <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+    <section class="approach-section section" id="werkwijze">
+      <div class="section-heading centered"><p class="eyebrow">VAN WENS NAAR WERKPLEK</p><h2>Een heldere aanpak,<br><em>zonder gedoe.</em></h2><p class="section-lead">We willen het kiezen van zakelijke meubels makkelijker maken. Zeker wanneer er meerdere producten of ruimtes tegelijk ingericht moeten worden.</p></div>
+      <div class="steps-grid">
+        <article class="step-card"><span class="step-number">01</span><div class="step-icon">⌕</div><h3>Kies uw meubels</h3><p>Bekijk het assortiment en zet passende artikelen in de winkelwagen.</p></article>
+        <article class="step-card"><span class="step-number">02</span><div class="step-icon">↗</div><h3>Bespreek uw wensen</h3><p>Voor aantallen, pakketten of advies kunt u contact opnemen met ARMADA.</p></article>
+        <article class="step-card"><span class="step-number">03</span><div class="step-icon">✓</div><h3>Stem de bestelling af</h3><p>Productkeuze, prijs, levering en eventuele montage worden vooraf besproken.</p></article>
+      </div>
+      <div class="package-banner"><div><p class="eyebrow">COMPLETE INRICHTING</p><h3>Niet alles los hoeven uitzoeken.</h3><p>We denken graag mee over combinaties van bureaus, stoelen, tafels en opbergmeubels voor uw ruimte.</p></div><a href="#contact" class="button button-cream">Bespreek uw project <span>↗</span></a></div>
+    </section>
+
+    <section class="team-section section" id="team">
+      <div class="section-heading section-heading-split"><div><p class="eyebrow">HET TEAM</p><h2>Een team met<br><em>een gezamenlijk doel.</em></h2></div><p class="section-lead">ARMADA is gestart als project door zes ondernemers. We verdelen de werkzaamheden en werken samen aan verkoop, administratie, inkoop, marketing en klantcontact.</p></div>
+      <div class="team-grid">
+        <article class="team-card"><span class="team-initial">A</span><div><h3>Ayman</h3><p>Algemene administratie</p></div></article>
+        <article class="team-card"><span class="team-initial">Ay</span><div><h3>Aysegul</h3><p>Boekhouding</p></div></article>
+        <article class="team-card"><span class="team-initial">R</span><div><h3>Romeo</h3><p>Teamcoördinatie</p></div></article>
+        <article class="team-card"><span class="team-initial">D</span><div><h3>Dominik</h3><p>(Functie invullen)</p></div></article>
+        <article class="team-card"><span class="team-initial">M</span><div><h3>Mansour</h3><p>(Functie invullen)</p></div></article>
+        <article class="team-card"><span class="team-initial">R</span><div><h3>Rana</h3><p>(Functie invullen)</p></div></article>
+      </div>
+    </section>
+
+    <section class="complaints-section" id="klachten">
+      <div class="complaints-intro"><p class="eyebrow">KLANTENSERVICE</p><h2>Niet tevreden?<br><em>Laat het ons weten.</em></h2><p>ARMADA neemt klachten serieus. We onderzoeken wat er is gebeurd, informeren de klant en zoeken naar een passende oplossing.</p><a href="#klachtformulier" class="button button-cream">Dien een klacht in <span>↗</span></a></div>
+      <div class="complaints-content">
+        <div class="complaint-step"><span>01</span><div><h3>Neem contact op</h3><p>Een klacht kan per e-mail, telefonisch, schriftelijk of persoonlijk worden ingediend.</p></div></div>
+        <div class="complaint-step"><span>02</span><div><h3>Vermeld de belangrijkste gegevens</h3><p>Voeg uw naam en contactgegevens, ordernummer, aankoop- of leverdatum en een duidelijke omschrijving toe. Foto’s van schade en relevante documenten helpen ons bij het onderzoek.</p></div></div>
+        <div class="complaint-step"><span>03</span><div><h3>We bevestigen en onderzoeken</h3><p>ARMADA streeft ernaar binnen 2 werkdagen de ontvangst te bevestigen. We controleren de order-, factuur- en leveringsgegevens en nemen indien nodig contact op met de leverancier of bezorgdienst.</p></div></div>
+        <div class="complaint-step"><span>04</span><div><h3>We zoeken een passende oplossing</h3><p>Afhankelijk van de situatie kan dit bijvoorbeeld reparatie, vervanging van een onderdeel of levering van een nieuw product zijn. We gebruiken klachten ook om onze dienstverlening te verbeteren.</p></div></div>
+      </div>
+    </section>
+
+    <section class="complaint-form-section section" id="klachtformulier">
+      <div class="complaint-form-copy"><p class="eyebrow">KLACHT MELDEN</p><h2>Vertel ons<br><em>wat er aan de hand is.</em></h2><p>Vul de gegevens in. De website maakt vervolgens een e-mail aan uw eigen e-mailprogramma. Controleer de inhoud en verstuur de e-mail daar.</p><p class="small-note">Voor schade of gebreken kunt u foto’s als bijlage toevoegen in uw e-mailprogramma.</p></div>
+      <form class="form-card" id="complaintForm">
+        <div class="form-row"><label>Naam<input name="naam" autocomplete="name" required placeholder="Uw naam"></label><label>E-mailadres<input name="email" type="email" autocomplete="email" required placeholder="naam@bedrijf.nl"></label></div>
+        <div class="form-row"><label>Ordernummer<input name="ordernummer" placeholder="Bijv. ARM-001"></label><label>Aankoop- of leverdatum<input name="datum" type="date"></label></div>
+        <label>Omschrijving van de klacht<textarea name="omschrijving" rows="4" required placeholder="Beschrijf wat er is gebeurd..."></textarea></label>
+        <button class="button button-dark button-full" type="submit">Maak klacht-e-mail <span>↗</span></button>
+        <p class="form-disclaimer">Uw gegevens worden niet door deze demo-website opgeslagen of automatisch verstuurd.</p>
+      </form>
+    </section>
+
+    <section class="contact-section section" id="contact">
+      <div class="contact-head"><p class="eyebrow">NEEM CONTACT OP</p><h2>We denken graag<br><em>met u mee.</em></h2><p>Een vraag over een product, een grotere bestelling of de inrichting van uw bedrijfsruimte? Neem contact op met ARMADA.</p></div>
+      <div class="contact-details">
+        <a href="mailto:info@armada-meubels.nl" class="contact-line"><span class="contact-icon">@</span><span><small>E-MAIL</small><strong>info@armada-meubels.nl</strong></span><span class="contact-arrow">↗</span></a>
+        <a href="tel:+31407852416" class="contact-line"><span class="contact-icon">⌕</span><span><small>TELEFOON</small><strong>040 - 785 24 16</strong></span><span class="contact-arrow">↗</span></a>
+        <div class="contact-line"><span class="contact-icon">⌖</span><span><small>VESTIGING</small><strong>Dillenburgstraat 1<br>5652 AB Eindhoven</strong></span></div>
+        <div class="contact-note">Voor socials, KvK-vermelding en eventuele openingstijden: <strong>(gegevens controleren of aanvullen)</strong>.</div>
+      </div>
+      <form class="contact-form" id="contactForm"><p class="eyebrow">STUUR EEN BERICHT</p><div class="form-row"><label>Naam<input name="naam" required placeholder="Uw naam"></label><label>E-mailadres<input name="email" type="email" required placeholder="naam@bedrijf.nl"></label></div><label>Waarmee kunnen we helpen?<textarea name="bericht" rows="3" required placeholder="Uw vraag of verzoek..."></textarea></label><button class="button button-dark button-full" type="submit">Maak e-mail aan <span>↗</span></button></form>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-main"><a class="footer-brand" href="#home"><img src="images/image1.png" alt="ARMADA logo"></a><p>Stijlvolle zakelijke meubels en projectinrichting in Eindhoven.</p><a class="footer-top" href="#home">Terug naar boven ↑</a></div><div class="footer-bottom"><span>© <span id="currentYear"></span> ARMADA · Zakelijke meubels</span><span>Gemaakt voor het ARMADA-project · (bedrijfsgegevens controleren voor publicatie)</span></div></footer>
+
+  <div class="overlay" id="cartOverlay" hidden></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-labelledby="cartTitle" aria-modal="true" role="dialog" aria-hidden="true">
+    <div class="drawer-header"><div><p class="eyebrow">UW SELECTIE</p><h2 id="cartTitle">Winkelwagen <span id="drawerCount">(0)</span></h2></div><button type="button" class="icon-button" id="closeCart" aria-label="Winkelwagen sluiten">×</button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-empty" id="cartEmpty"><div class="empty-bag">◇</div><h3>Uw winkelwagen is nog leeg</h3><p>Voeg een meubel toe om uw selectie hier te bekijken.</p><button type="button" class="button button-dark" id="continueShopping">Bekijk assortiment</button></div>
+    <div class="cart-footer" id="cartFooter" hidden><div class="subtotal-line"><span>Subtotaal incl. btw</span><strong id="cartSubtotal">€ 0,00</strong></div><div class="tax-note">Exclusief eventuele levering en montage. Definitieve afspraken worden vooraf bevestigd.</div><button class="button button-dark button-full" id="openCheckout" type="button">Bestelling aanvragen <span>↗</span></button><button class="clear-cart" id="clearCart" type="button">Winkelwagen leegmaken</button></div>
+  </aside>
+
+  <div class="modal-backdrop" id="checkoutBackdrop" hidden></div>
+  <section class="checkout-modal" id="checkoutModal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle" aria-hidden="true">
+    <div class="drawer-header"><div><p class="eyebrow">BESTELAANVRAAG</p><h2 id="checkoutTitle">Uw gegevens</h2></div><button type="button" class="icon-button" id="closeCheckout" aria-label="Venster sluiten">×</button></div>
+    <p class="checkout-intro">Controleer uw selectie. Na invullen wordt een concept-e-mail met uw artikelen en totalen geopend.</p>
+    <form id="checkoutForm"><label>Naam<input name="naam" required autocomplete="name" placeholder="Uw naam"></label><label>Bedrijf (optioneel)<input name="bedrijf" autocomplete="organization" placeholder="Bedrijfsnaam"></label><div class="form-row"><label>E-mailadres<input name="email" type="email" required autocomplete="email" placeholder="naam@bedrijf.nl"></label><label>Telefoon (optioneel)<input name="telefoon" autocomplete="tel" placeholder="Telefoonnummer"></label></div><label>Leveradres of opmerkingen<textarea name="opmerkingen" rows="3" placeholder="Leveradres, gewenste aantallen of vragen..."></textarea></label><div class="checkout-total"><span>Subtotaal incl. btw</span><strong id="checkoutSubtotal">€ 0,00</strong></div><p class="small-note">Dit is een schoolproject-demo: er wordt geen betaling verwerkt. Versturen gebeurt pas nadat u de e-mail zelf bevestigt.</p><button class="button button-dark button-full" type="submit">Open bestel-e-mail <span>↗</span></button></form>
+  </section>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
